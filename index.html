@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Trade Consultants & Advocates - Trade Remedy Experts</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="disclaimer-active">
+    <!-- DISCLAIMER, NAVIGATION, AND OTHER SECTIONS (same as before) -->
+    <!-- I'll include the complete HTML structure in the file -->
+
+    <div class="disclaimer-overlay" id="disclaimerOverlay">
+        <div class="disclaimer-modal">
+            <div class="disclaimer-header">
+                <div class="disclaimer-icon">⚖️</div>
+                <h2>Important Legal Disclaimer</h2>
+                <p>Bar Council of India Regulations</p>
+            </div>
+            <div class="disclaimer-content">
+                <h3>Disclaimer Notice</h3>
+                <p>As per the rules of the <strong>Bar Council of India</strong>, we are not permitted to solicit work and advertise.</p>
+                <ul>
+                    <li>There has been no advertisement, personal communication, solicitation, invitation or inducement of any sort whatsoever from us or any of our members to solicit any work through this website;</li>
+                    <li>The user wishes to gain more information about us for his/her own information and use;</li>
+                    <li>The information about us is provided to the user only on his/her specific request.</li>
+                </ul>
+                <div class="disclaimer-highlight">
+                    <p>⚠️ The information provided under this website is solely available at your request for informational purposes only.</p>
+                </div>
+            </div>
+            <div class="disclaimer-buttons">
+                <button class="disclaimer-btn btn-agree" onclick="acceptDisclaimer()">✓ Agree & Enter</button>
+                <button class="disclaimer-btn btn-exit" onclick="exitSite()">✗ Exit Site</button>
+            </div>
+        </div>
+    </div>
+
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="nav-left">
+                <a href="#" class="logo">
+                    <span class="logo-icon"><img src="/images/logo.jpg" alt="" width="230" height="auto"></span>
+                    
+                </a>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#industries" class="nav-link">Industries</a></li>
+                </ul>
+            </div>
+            <div style="display: flex; align-items: center; gap: 15px;">
+                <a href="#contact" class="cta-button">Contact Us</a>
+                <div class="theme-toggle-wrapper">
+                    <div class="theme-toggle light" id="themeToggle" onclick="toggleTheme()">
+                        <div class="toggle-slider"><span class="theme-icon sun-icon"></span></div>
+                        <span class="theme-icon moon-icon">🌙</span>
+                    </div>
+                </div>
+                <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+            </div>
+        </div>
+    </nav>
+
+   <!-- BANNER WITH IMAGE SUPPORT -->
+<div class="banner-wrapper">
+    <div class="image-banner-slider" id="imageBannerSlider">
+
+        <!-- Slide 1: Legal Justice -->
+        <div class="image-banner-slide active">
+            <div class="image-banner-bg" style="background-image: url('/images/banner2.jpeg');"></div>
+            <div class="image-banner-overlay">
+                <div class="image-banner-content">
+                    <h1>World Trade Consultants & Advocates</h1>
+                    <p>Building a Law Firm with a Difference</p>
+                    <button class="image-banner-cta">Learn More</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 2: Global Trade -->
+        <div class="image-banner-slide">
+            <div class="image-banner-bg" style="background-image: url('/images/banner1.png');"></div>
+            <div class="image-banner-overlay">
+                <div class="image-banner-content">
+                    <h1>Trade Remedy Experts</h1>
+                    <p>750+ Companies Represented Globally</p>
+                    <button class="image-banner-cta">Explore Services</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 3: Professional Excellence -->
+        <div class="image-banner-slide">
+            <div class="image-banner-bg" style="background-image: url('/images/banner3.jpeg');"></div>
+            <div class="image-banner-overlay">
+                <div class="image-banner-content">
+                    <h1>Integrated Legal-Accounting Expertise</h1>
+                    <p>Founded by Former DGTR Officer</p>
+                    <button class="image-banner-cta">Get Consultation</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Indicators -->
+        <div class="image-banner-indicators">
+            <div class="image-indicator active" onclick="goToImageSlide(0)"></div>
+            <div class="image-indicator" onclick="goToImageSlide(1)"></div>
+            <div class="image-indicator" onclick="goToImageSlide(2)"></div>
+        </div>
+
+        <!-- Arrow Navigation -->
+        <button class="image-banner-arrow prev" onclick="prevImageSlide()">❮</button>
+        <button class="image-banner-arrow next" onclick="nextImageSlide()">❯</button>
+    </div>
+</div>
+
+    <div class="announcement-strip">
+        <div class="announcement-content">
+            <div class="announcement-item"><span class="announcement-icon">📢</span><span>Successfully represented 750+ companies</span></div>
+            <div class="announcement-item"><span class="announcement-icon">🌍</span><span>Global reach spanning 20+ countries</span></div>
+            <div class="announcement-item"><span class="announcement-icon">⚖️</span><span>Founded by Former DGTR Officer</span></div>
+            <div class="announcement-item"><span class="announcement-icon">🏆</span><span>Integrated legal-accounting expertise</span></div>
+            <div class="announcement-item"><span class="announcement-icon">📢</span><span>Successfully represented 750+ companies</span></div>
+            <div class="announcement-item"><span class="announcement-icon">🌍</span><span>Global reach spanning 20+ countries</span></div>
+            <div class="announcement-item"><span class="announcement-icon">⚖️</span><span>Founded by Former DGTR Officer</span></div>
+            <div class="announcement-item"><span class="announcement-icon">🏆</span><span>Integrated legal-accounting expertise</span></div>
+        </div>
+    </div>
+
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Specialized Services</h2>
+                <p>Comprehensive trade remedy solutions</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card"><span class="service-icon">📋</span><h3>Anti-Dumping</h3><p>Complete representation in proceedings.</p></div>
+                <div class="service-card"><span class="service-icon">⚖️</span><h3>Countervailing Duties</h3><p>Expert handling of subsidy investigations.</p></div>
+                <div class="service-card"><span class="service-icon">🛡️</span><h3>Safeguard Measures</h3><p>Strategic representation in measures.</p></div>
+                <div class="service-card"><span class="service-icon">🌍</span><h3>WTO Disputes</h3><p>Support in trade measures before WTO.</p></div>
+                            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="about-content">
+            <div class="about-text">
+                <h2>About Us</h2>
+                <p>World Trade Consultants & Advocates is globally recognized for representing more than 750 companies.</p>
+                <p>Our firm combines unparalleled legal expertise with sophisticated accounting capabilities.</p>
+                <div class="founder-info">
+                    <h4>Founded by Mr. Rajeev Jain</h4>
+                    <p>Former Officer, DGTR</p>
+                </div>
+            </div>
+            <div class="about-features">
+                <div class="feature-item"><h4>🎯 Integrated Expertise</h4><p>Unique combination for comprehensive solutions</p></div>
+                <div class="feature-item"><h4>🏆 Proven Track Record</h4><p>750+ successful representations</p></div>
+                <div class="feature-item"><h4>💼 Insider Knowledge</h4><p>Former DGTR officer insights</p></div>
+                <div class="feature-item"><h4>🌐 Global Reach</h4><p>20+ countries experience</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== STATISTICS SECTION - NOW WITH SMALLER CARDS ===== -->
+    <section class="statistics">
+        <div class="stats-grid">
+            <div class="stat-box">
+                <span class="icon">🏢</span>
+                <span class="number">750+</span>
+                <span class="label">Companies</span>
+                <span class="description">Represented globally</span>
+            </div>
+            <div class="stat-box">
+                <span class="icon">🌍</span>
+                <span class="number">20+</span>
+                <span class="label">Countries</span>
+                <span class="description">Global expertise</span>
+            </div>
+            <div class="stat-box">
+                <span class="icon">⭐</span>
+                <span class="number">100%</span>
+                <span class="label">Satisfaction</span>
+                <span class="description">Excellence committed</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- news section -->
+     <!-- LATEST NEWS SECTION -->
+<section class="latest-news-section" id="latest-news">
+    <div class="news-container">
+
+        <!-- Header -->
+        <div class="news-header">
+            <h2>Latest News</h2>
+            <p>Stay updated with the latest developments in trade remedies and global commerce</p>
+        </div>
+
+        <!-- News Grid -->
+        <div class="news-grid">
+
+            <!-- Featured News Card -->
+            <article class="news-card featured">
+                <div class="featured-image">
+                    <img src="/images/banner-image.png" alt="DGTR News">
+                    <span class="featured-badge">Featured</span>
+                </div>
+                <div class="featured-content">
+                    <h3>Fresh Anti-Dumping Investigation Concerning Imports of Natural Mica Based Pearl Industrial Pigments</h3>
+                    <div class="news-meta">
+                        <div class="news-meta-item">
+                            <strong>📅 Date:</strong> November 16, 2025
+                        </div>
+                        <div class="news-meta-item">
+                            <strong>📍 Source:</strong> DGTR
+                        </div>
+                    </div>
+                    <p>The Directorate General of Trade Remedies has initiated a fresh anti-dumping investigation concerning imports of natural mica based pearl industrial pigments, excluding cosmetic grade, originating in or exported from China PR.</p>
+                    <button class="read-more-btn">Read Full Story</button>
+                </div>
+            </article>
+
+            <!-- News Card 2 -->
+            <article class="news-card">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&h=400&fit=crop" alt="SUFI Legal">
+                    <span class="card-badge">Legal</span>
+                </div>
+                <div class="card-content">
+                    <span class="card-category">Organization</span>
+                    <h3>SUFI Legal Committee</h3>
+                    <p>The SUFI (Small & Medium Enterprises Federation) Legal Committee meets to discuss trade remedy strategies and protect domestic industry interests globally.</p>
+                    <div class="card-footer">
+                        <span class="card-date">Nov 15, 2025</span>
+                        <a href="#" class="card-read-more">Learn More</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- News Card 3 -->
+            <article class="news-card">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&h=400&fit=crop" alt="DGTR Process">
+                    <span class="card-badge">Update</span>
+                </div>
+                <div class="card-content">
+                    <span class="card-category">Process</span>
+                    <h3>DGTR Simplifies Process to Protect Domestic Industry</h3>
+                    <p>The DGTR has streamlined its procedures to better protect domestic industries from unfair trade practices, making the investigation process more efficient.</p>
+                    <div class="card-footer">
+                        <span class="card-date">Nov 14, 2025</span>
+                        <a href="#" class="card-read-more">Learn More</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- News Card 4 -->
+            <article class="news-card">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&h=400&fit=crop" alt="WTO">
+                    <span class="card-badge">International</span>
+                </div>
+                <div class="card-content">
+                    <span class="card-category">WTO</span>
+                    <h3>India Loses Export Incentive Case Filed by US at WTO</h3>
+                    <p>The World Trade Organization has ruled against India in a case involving export incentive schemes, filed by the United States arguing they contravene WTO rules.</p>
+                    <div class="card-footer">
+                        <span class="card-date">Nov 13, 2025</span>
+                        <a href="#" class="card-read-more">Learn More</a>
+                    </div>
+                </div>
+            </article>
+            <article class="news-card">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&h=400&fit=crop" alt="WTO">
+                    <span class="card-badge">International</span>
+                </div>
+                <div class="card-content">
+                    <span class="card-category">WTO</span>
+                    <h3>India Loses Export Incentive Case Filed by US at WTO</h3>
+                    <p>The World Trade Organization has ruled against India in a case involving export incentive schemes, filed by the United States arguing they contravene WTO rules.</p>
+                    <div class="card-footer">
+                        <span class="card-date">Nov 13, 2025</span>
+                        <a href="#" class="card-read-more">Learn More</a>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+        <!-- Profile Cards Section -->
+        <div class="profile-cards-wrapper">
+            <div class="profile-card">
+                <div class="profile-header">
+                    <div class="profile-avatar">👨‍⚖️</div>
+                    <div class="profile-name">SUFI Legal Committee</div>
+                    <div class="profile-role">Organization</div>
+                </div>
+                <div class="profile-content">
+                    <p>Supporting small and medium enterprises in trade remedy matters with expert legal guidance and strategic representation.</p>
+                    <a href="#" class="profile-link">Learn More</a>
+                </div>
+            </div>
+
+            <div class="profile-card">
+                <div class="profile-header">
+                    <div class="profile-avatar">🏛️</div>
+                    <div class="profile-name">DGTR Initiatives</div>
+                    <div class="profile-role">Government Body</div>
+                </div>
+                <div class="profile-content">
+                    <p>Streamlining trade remedy procedures and protecting domestic industries through modernized investigation processes and international cooperation.</p>
+                    <a href="#" class="profile-link">Learn More</a>
+                </div>
+            </div>
+
+            <div class="profile-card">
+                <div class="profile-header">
+                    <div class="profile-avatar">🌍</div>
+                    <div class="profile-name">WTO Updates</div>
+                    <div class="profile-role">International Trade</div>
+                </div>
+                <div class="profile-content">
+                    <p>Latest developments in world trade organization regulations, dispute settlements, and international commerce policies affecting global markets.</p>
+                    <a href="#" class="profile-link">Learn More</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Newsletter -->
+        <div class="newsletter-wrapper">
+            <div class="newsletter-content">
+                <h3>Stay Updated</h3>
+                <p>Subscribe to our newsletter to receive the latest news on trade remedies and global commerce</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+    <!-- news section end-->
+
+    <section class="why-choose">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why Choose Us</h2>
+                <p>What sets us apart</p>
+            </div>
+            <div class="benefits-grid">
+                <div class="benefit-card"><h3>🔬 Integrated Expertise</h3><p>Unique combination ensuring holistic representation</p></div>
+                <div class="benefit-card"><h3>📊 Proven Results</h3><p>750+ successful representations</p></div>
+                <div class="benefit-card"><h3>🎓 Insider Knowledge</h3><p>Deep institutional insights</p></div>
+                <div class="benefit-card"><h3>🎯 Strategic Approach</h3><p>Comprehensive planning</p></div>
+                <div class="benefit-card"><h3>❤️ Pro Bono</h3><p>Serving communities</p></div>
+                <div class="benefit-card"><h3>🌈 Diversity</h3><p>Inclusive workplace</p></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="industries" id="industries">
+        <div class="container">
+            <div class="section-header">
+                <h2>Industries We Serve</h2>
+                <p>Diverse sectors expertise</p>
+            </div>
+            <div class="industries-grid">
+                <div class="industry-item"><span>Metals & Steel</span></div>
+                <div class="industry-item"><span>Chemicals</span></div>
+                <div class="industry-item"><span>Textiles</span></div>
+                <div class="industry-item"><span>Plastics</span></div>
+                <div class="industry-item"><span>Electronics</span></div>
+                <div class="industry-item"><span>Pharmaceuticals</span></div>
+                <div class="industry-item"><span>Automotive</span></div>
+                <div class="industry-item"><span>Agriculture</span></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section" id="contact">
+        <h2>Ready to Protect Your Trade Interests?</h2>
+        <p>Schedule a consultation today</p>
+        <a href="mailto:contact@wtca.com" class="cta-button-large">Get In Touch</a>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section footer-about">
+                <h3>WTC&A</h3>
+                <p>Specialized trade remedy experts committed to excellence and service.</p>
+                <div class="footer-social">
+                     <a href="#"><i class="fab fa-facebook-f"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+     <a href="mailto:youremail@gmail.com"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Links</h3>
+                <a href="#home">Home</a>
+                <a href="#services">Services</a>
+                <a href="#about">About</a>
+                <a href="#industries">Industries</a>
+            </div>
+            <div class="footer-section">
+                <h3>Services</h3>
+                <a href="#services">Anti-Dumping</a>
+                <a href="#services">Countervailing</a>
+                <a href="#services">Safeguard</a>
+                <a href="#services">WTO</a>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <div class="footer-contact-item"><i>📧</i><div><strong>Email:</strong> contact@wtca.com</div></div>
+                <div class="footer-contact-item"><i>📞</i><div><strong>Phone:</strong> +91-XXX-XXX-XXXX</div></div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-badges">
+                <div class="badge">⚖️ Registered</div>
+                <div class="badge">🏆 750+ Cases</div>
+                <div class="badge">🌍 Global</div>
+                <div class="badge">💼 Pro Bono</div>
+            </div>
+            <p>&copy; 2025 WTC&A. All rights reserved.</p>
+        </div>
+    </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
